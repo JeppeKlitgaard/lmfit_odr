@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "lmfit_odr"
+version = "0.1.0"
+description = "Provides a clean interface between lmfit and scipy.odr"
+authors = ["Jeppe Klitgaard <hi@jeppe.science>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "lmfit_odr"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+lmfit = "^1"
+scipy = "^1.7"
+uncertainties = "^3.1.7"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.0.0"
+black = {version = "^23.1.0", allow-prereleases = true}
+ipykernel = "^6.21.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
